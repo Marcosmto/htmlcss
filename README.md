@@ -1,2 +1,1 @@
-# htmlcss
- Aula alura
+Aulas práticas do Curso Alura!
