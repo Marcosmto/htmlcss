@@ -1,0 +1,115 @@
+header{
+    background: #bbbbbb;    /*cor de fundo*/
+    padding: 20px;
+}
+
+.caixa{
+    width: 940px;
+    position: relative;     /*o elemento será ajustado de acordo com as indicações*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;  /*pode posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static*/
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;        /*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha*/
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;               /*cor do elemento*/
+    font-weight: bold;         /*  deixar palavras em negrito */
+    font-size: 22px;
+    text-decoration: none;      /*tira a marcação de descrição*/
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;         /*centralizar elemento */
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;     /*ajustar elementos dentro de uma caixa*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{             /*"hover" muda a cor de elementos quando o mouse está por cima  do elemento*/
+    border-color: yellow;
+}
+
+.produtos li:active{        /*"active" muda a cor de elementos quando é clicado pelo mouse */
+    border-color: green;
+}
+
+.produtos li:hover h2 {         /*"hover" muda o tamanho de elemento quando o mouse está por cima */
+    font-size: 31px;
+}
+
+.produtos h2{
+    font-size: 30px;    /*aumentar o tamanho da fonte */
+    font-weight: bold;
+    text-transform: uppercase;      /*transformar a fonte em maiuscúlo*/
+}
+
+.produto-descricao{
+    font-size: 18px;
+
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("/imagens-produtos/bg.jpg");        /*imagem de fundo*/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
