@@ -118,3 +118,36 @@ form label, form legend{
     margin: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;   /*remover borda do botão*/
+    border-radius: 5px;
+    transition: 1s all;   /*transforma a cor lentamente*/
+    cursor: pointer;        /*mudar o cursor do mouse para mãozinha*/
+}
+
+.enviar:hover {         /*mudar elemento quando o mouse estiver por cima de tal elemento*/
+    background: green;
+    transform: scale(1.2);      /*aumentar o tamnho do elemento*/
+    /* transform: rotate(70deg) scale(1.2);             rotaciona o elemento e aumenta o tamanho do elemento */
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
