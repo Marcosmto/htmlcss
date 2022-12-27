@@ -159,9 +159,9 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
     clear: left;
+    /* color: rgba(0, 0, 0, 0.3);      titulo com opacidade*/
+    /* text-shadow: 2px 2px #ff0000;   texto com sombra */
 }
-
-
 
 .principal {
     padding: 3em 0;
@@ -187,7 +187,7 @@ td, th {
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 5px;
-    box-shadow: 6px 6px 15px 1px;
+    box-shadow: 10px 10px 30px #000000;     /*sombra para elemento*/
 }
 
 .mapa{
@@ -231,12 +231,19 @@ td, th {
 }
 
 .itens:before{
-    content: "⭐";
+    content: "⭐";      /*Mostrar elemento antes*/
 }
 
 
 .imagem-beneficios{
-    width: 60%;
+    width: 60%;             /*largura de 60%*/
+    opacity: 0.9;           /*Deixar imagem com pouca claridade*/
+    transition: 400ms;      /*Faz transição de escuro para claro*/
+    box-shadow: 10px 10px 30px #000000;     /*sombra para elemento*/
+}
+
+.imagem-beneficios:hover{       /*quando o mouse estiver por cima*/
+    opacity: 1;             /*Deixar imagem com pouca claridade*/
 }
 
 .video{
@@ -244,3 +251,19 @@ td, th {
     margin: 2em auto;
 }
 
+@media screen and (max-width: 480px){ /* dentro dessa media query que criamos um estilo visual que compreenda telas de até 480px.*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
